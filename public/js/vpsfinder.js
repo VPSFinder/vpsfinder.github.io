@@ -103,15 +103,15 @@ function filterVPSProviders() {
 
 function checkItemMatch(el, query) {
   const lines = (el.getAttribute('data-lines') || '').split(' ');
-  const price = el.getAttribute('data-price') || '';
+  const prices = (el.getAttribute('data-price') || '').split(' ');
   const pay = (el.getAttribute('data-pay') || '').split(' ');
   const searchText = (el.getAttribute('data-searchtext') || '').toLowerCase();
   
   // 线路筛选
   let lineMatch = (activeFilters.line === 'all') || lines.includes(activeFilters.line);
   
-  // 预算筛选
-  let priceMatch = (activeFilters.price === 'all') || (price === activeFilters.price);
+  // 预算筛选（一个商家可同时属于多个档位）
+  let priceMatch = (activeFilters.price === 'all') || prices.includes(activeFilters.price);
   
   // 支付方式筛选
   let payMatch = (activeFilters.pay === 'all') || pay.includes(activeFilters.pay);
