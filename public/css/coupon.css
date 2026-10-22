@@ -73,6 +73,24 @@
 .coupon-button:active {
     transform: translateY(0);
 }
+/* 无需复制的直达链接按钮 */
+.coupon-button-link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+/* 主题的 .markdown a:visited 会把访问过的链接染成紫色，这里提高优先级保持白字 */
+.markdown a.coupon-button-link,
+.markdown a.coupon-button-link:visited,
+.markdown a.coupon-button-link:hover,
+.markdown a.coupon-button-link:active {
+    color: white;
+    text-decoration: none;
+}
+.markdown a.coupon-button-link::after {
+    display: none;
+}
 /* 成功状态 */
 .coupon-button.copied {
     background: linear-gradient(135deg, #10b981, #059669);
