@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VPS 真实性能测评室 · 机房节点深度实测 on 寻机匠</title><link>https://vpsfinder.github.io/category/vps-reviews/</link><description>Recent content in VPS 真实性能测评室 · 机房节点深度实测 on 寻机匠</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Wed, 28 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://vpsfinder.github.io/category/vps-reviews/index.xml" rel="self" type="application/rss+xml"/><item><title>RackNerd 圣何塞测评：年付 1核1G 特价机三网延迟、丢包、IOPS 跑分与流媒体解锁实测</title><link>https://vpsfinder.github.io/category/vps-reviews/racknerd-sanjose-kvm/</link><pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate><guid>https://vpsfinder.github.io/category/vps-reviews/racknerd-sanjose-kvm/</guid><description>&lt;h1 id="racknerd-圣何塞测评年付-1核1g-特价机三网延迟丢包iops-跑分与流媒体解锁实测">
+ RackNerd 圣何塞测评：年付 1核1G 特价机三网延迟、丢包、IOPS 跑分与流媒体解锁实测
+ &lt;a class="anchor" href="#racknerd-%e5%9c%a3%e4%bd%95%e5%a1%9e%e6%b5%8b%e8%af%84%e5%b9%b4%e4%bb%98-1%e6%a0%b81g-%e7%89%b9%e4%bb%b7%e6%9c%ba%e4%b8%89%e7%bd%91%e5%bb%b6%e8%bf%9f%e4%b8%a2%e5%8c%85iops-%e8%b7%91%e5%88%86%e4%b8%8e%e6%b5%81%e5%aa%92%e4%bd%93%e8%a7%a3%e9%94%81%e5%ae%9e%e6%b5%8b">#&lt;/a>
+&lt;/h1>
+&lt;p>一年二十多美元的 VPS 到底能用来干什么？对于 RackNerd 的年付特价机，大家最关心的是国内访问慢不慢、会不会丢包，以及这么便宜的硬件能不能撑起一个小网站。&lt;/p>
+&lt;p>这次我们开通了一台 RackNerd 圣何塞机房的 1核1G 特价实例，从延迟、丢包、路由、硬件、带宽和 IP 属性六个维度做了完整测试，下面把原始数据和解读逐项摊开。&lt;/p>
+&lt;div class="vps-provider-card" id="provider-racknerd">
+ &lt;div class="provider-card-header">
+ &lt;div class="provider-title-wrap">
+ &lt;h3 class="provider-name">RackNerd&lt;/h3>&lt;span class="provider-badge">全网便宜年付机首选&lt;/span>&lt;/div>
+ &lt;div class="provider-rating">
+ &lt;span class="rating-stars">★&lt;/span>
+ &lt;span class="rating-score">4.8&lt;/span>
+ &lt;span class="rating-max">/ 5.0&lt;/span>
+ &lt;/div>
+ &lt;/div>
+
+ &lt;div class="provider-meta-grid">
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">成立时间&lt;/span>
+ &lt;span class="meta-value">2019 年&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">起步价格&lt;/span>
+ &lt;span class="meta-value price-highlight">$21.99/年&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">运营主体&lt;/span>
+ &lt;span class="meta-value">美国加州&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">退款政策&lt;/span>
+ &lt;span class="meta-value">依服务条款工单申请&lt;/span>
+ &lt;/div>
+ &lt;/div>&lt;div class="provider-features-tags">&lt;span class="feature-pill">超低年付特惠&lt;/span>&lt;span class="feature-pill">全美多机房可选&lt;/span>&lt;span class="feature-pill">三网回程直连&lt;/span>&lt;span class="feature-pill">IP不通可免费更换&lt;/span>&lt;/div>&lt;div class="provider-actions">&lt;a href="https://vpsfinder.github.io/category/vps-providers/racknerd/" class="card-btn btn-secondary">
+ &lt;span>查看商家介绍&lt;/span>
+ &lt;/a>&lt;a href="https://my.racknerd.com/aff.php?aff=12162" class="card-btn btn-primary" target="_blank" rel="nofollow noopener sponsored">
+ &lt;span>访问官方网站&lt;/span>
+ &lt;svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14" aria-hidden="true">&lt;path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />&lt;/svg>
+ &lt;/a>
+ &lt;/div>
+&lt;/div>
+&lt;p>如果你还不了解这家商家的背景、支付方式和全部特价套餐，可以先阅读 
+ &lt;a href="https://vpsfinder.github.io/category/vps-providers/racknerd/">RackNerd 商家介绍&lt;/a>。本文不再重复这些信息，只聚焦这台圣何塞机器本身的实测表现。&lt;/p>
+&lt;h2 id="测评结论速览">
+ 测评结论速览
+ &lt;a class="anchor" href="#%e6%b5%8b%e8%af%84%e7%bb%93%e8%ae%ba%e9%80%9f%e8%a7%88">#&lt;/a>
+&lt;/h2>
+&lt;p>先给赶时间的读者一个结论：这台机器的优势是价格、美国本土网络和 AI 服务可用性，短板则是三网都走普通线路，国内延迟在 150ms 以上，个别运营商节点丢包明显。&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">测试项&lt;/th>
+ &lt;th style="text-align: left">实测结果&lt;/th>
+ &lt;th style="text-align: left">评价&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">测试套餐&lt;/td>
+ &lt;td style="text-align: left">1核 / 1G / 24G SSD / 1Gbps 端口，同类特价款年付 $21.99 起&lt;/td>
+ &lt;td style="text-align: left">极低价位&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">全国三网延迟&lt;/td>
+ &lt;td style="text-align: left">电信 162ms / 联通 187ms / 移动 226ms（白天）&lt;/td>
+ &lt;td style="text-align: left">普通&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">持续丢包&lt;/td>
+ &lt;td style="text-align: left">14 个节点 100 次 Ping，7 个节点 0~3%，丽水联通 37%&lt;/td>
+ &lt;td style="text-align: left">偏弱&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">三网回程路由&lt;/td>
+ &lt;td style="text-align: left">电信 163，联通 4837，移动 CMI&lt;/td>
+ &lt;td style="text-align: left">普通线路&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">CPU 性能&lt;/td>
+ &lt;td style="text-align: left">Intel Xeon E5-2680 v2，单核 896 events/s&lt;/td>
+ &lt;td style="text-align: left">够用&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">磁盘 I/O&lt;/td>
+ &lt;td style="text-align: left">4K 随机读写约 3,160 IOPS，Bench.sh 平均 575 MB/s&lt;/td>
+ &lt;td style="text-align: left">良好&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">IP 与解锁&lt;/td>
+ &lt;td style="text-align: left">美国原生 IP，Netflix / YouTube 解锁，ChatGPT / Gemini / Claude 可用&lt;/td>
+ &lt;td style="text-align: left">中等&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>如果你的预算有限，需要一台用来学习 Linux、跑脚本或搭建面向海外访客的小站，它的性价比几乎没有对手。可以直接前往 &lt;a href="https://my.racknerd.com/aff.php?aff=12162" class="aff-link aff-inline" target="_blank" rel="nofollow noopener sponsored">RackNerd 官网选购年付特价 VPS&lt;/a>，特价款无需优惠码。&lt;/p></description></item><item><title>JustHost 洛杉矶测评：$4.85 月付 1核1G 三网延迟、丢包、全解锁与 IP 属性实测</title><link>https://vpsfinder.github.io/category/vps-reviews/justhost-los-angeles/</link><pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate><guid>https://vpsfinder.github.io/category/vps-reviews/justhost-los-angeles/</guid><description>&lt;h1 id="justhost-洛杉矶测评485-月付-1核1g-三网延迟丢包全解锁与-ip-属性实测">
+ JustHost 洛杉矶测评：$4.85 月付 1核1G 三网延迟、丢包、全解锁与 IP 属性实测
+ &lt;a class="anchor" href="#justhost-%e6%b4%9b%e6%9d%89%e7%9f%b6%e6%b5%8b%e8%af%84485-%e6%9c%88%e4%bb%98-1%e6%a0%b81g-%e4%b8%89%e7%bd%91%e5%bb%b6%e8%bf%9f%e4%b8%a2%e5%8c%85%e5%85%a8%e8%a7%a3%e9%94%81%e4%b8%8e-ip-%e5%b1%9e%e6%80%a7%e5%ae%9e%e6%b5%8b">#&lt;/a>
+&lt;/h1>
+&lt;p>JustHost 最出名的是后台一键免费换 IP、换机房。但在决定长期使用某个机房之前，你还是需要先弄清楚它的国内网络、硬件性能和 IP 属性到底处在什么水平。&lt;/p>
+&lt;p>这次我们开通了一台 JustHost 洛杉矶机房的 1核1G 实例，从延迟、丢包、路由、硬件、带宽和 IP 属性六个维度做了完整测试，下面把原始数据和解读逐项摊开。&lt;/p>
+&lt;div class="vps-provider-card" id="provider-justhost">
+ &lt;div class="provider-card-header">
+ &lt;div class="provider-title-wrap">
+ &lt;h3 class="provider-name">JustHost&lt;/h3>&lt;span class="provider-badge">全球 40&amp;#43; 机房 / 一键免费换 IP 与迁机房&lt;/span>&lt;/div>
+ &lt;div class="provider-rating">
+ &lt;span class="rating-stars">★&lt;/span>
+ &lt;span class="rating-score">4.4&lt;/span>
+ &lt;span class="rating-max">/ 5.0&lt;/span>
+ &lt;/div>
+ &lt;/div>
+
+ &lt;div class="provider-meta-grid">
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">成立时间&lt;/span>
+ &lt;span class="meta-value">2006 年&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">起步价格&lt;/span>
+ &lt;span class="meta-value price-highlight">$1.99/月&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">运营主体&lt;/span>
+ &lt;span class="meta-value">俄罗斯（LLC BAXET）&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">退款政策&lt;/span>
+ &lt;span class="meta-value">支持 15 天退款（默认退余额，原路退需工单申请）&lt;/span>
+ &lt;/div>
+ &lt;/div>&lt;div class="provider-features-tags">&lt;span class="feature-pill">后台一键免费换机房与 IP&lt;/span>&lt;span class="feature-pill">全球 40&amp;#43; 处数据中心覆盖&lt;/span>&lt;span class="feature-pill">全系 100M~1Gbps 不限流量&lt;/span>&lt;span class="feature-pill">低门槛 $1.99 起体验&lt;/span>&lt;/div>&lt;div class="provider-actions">&lt;a href="https://vpsfinder.github.io/category/vps-providers/justhost/" class="card-btn btn-secondary">
+ &lt;span>查看商家介绍&lt;/span>
+ &lt;/a>&lt;a href="https://justhost.ru/?ref=215407" class="card-btn btn-primary" target="_blank" rel="nofollow noopener sponsored">
+ &lt;span>访问官方网站&lt;/span>
+ &lt;svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14" aria-hidden="true">&lt;path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />&lt;/svg>
+ &lt;/a>
+ &lt;/div>
+&lt;/div>
+&lt;p>如果你还不了解这家商家的 40 多个机房、换 IP 机制和退款政策，可以先阅读 
+ &lt;a href="https://vpsfinder.github.io/category/vps-providers/justhost/">JustHost 商家介绍&lt;/a>。本文不再重复这些信息，只聚焦这台洛杉矶机器本身的实测表现。&lt;/p></description></item><item><title>Vultr 洛杉矶测评：1核1G 机型三网延迟、丢包、万兆级带宽与 IP 解锁实测</title><link>https://vpsfinder.github.io/category/vps-reviews/vultr-los-angeles/</link><pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate><guid>https://vpsfinder.github.io/category/vps-reviews/vultr-los-angeles/</guid><description>&lt;h1 id="vultr-洛杉矶测评1核1g-机型三网延迟丢包万兆级带宽与-ip-解锁实测">
+ Vultr 洛杉矶测评：1核1G 机型三网延迟、丢包、万兆级带宽与 IP 解锁实测
+ &lt;a class="anchor" href="#vultr-%e6%b4%9b%e6%9d%89%e7%9f%b6%e6%b5%8b%e8%af%841%e6%a0%b81g-%e6%9c%ba%e5%9e%8b%e4%b8%89%e7%bd%91%e5%bb%b6%e8%bf%9f%e4%b8%a2%e5%8c%85%e4%b8%87%e5%85%86%e7%ba%a7%e5%b8%a6%e5%ae%bd%e4%b8%8e-ip-%e8%a7%a3%e9%94%81%e5%ae%9e%e6%b5%8b">#&lt;/a>
+&lt;/h1>
+&lt;p>Vultr 是很多开发者的第一台海外云服务器，按小时计费、全球几十个机房随开随删。但洛杉矶这个最热门的机房，从国内访问到底是什么水平，宣传页上是看不到的。&lt;/p>
+&lt;p>这次我们开通了一台 Vultr 洛杉矶机房的 1核1G 实例，从延迟、丢包、路由、硬件、带宽和 IP 属性六个维度做了完整测试，下面把原始数据和解读逐项摊开。&lt;/p>
+&lt;div class="vps-provider-card" id="provider-vultr">
+ &lt;div class="provider-card-header">
+ &lt;div class="provider-title-wrap">
+ &lt;h3 class="provider-name">Vultr&lt;/h3>&lt;span class="provider-badge">全球 34 机房 / 按小时计费云&lt;/span>&lt;/div>
+ &lt;div class="provider-rating">
+ &lt;span class="rating-stars">★&lt;/span>
+ &lt;span class="rating-score">4.5&lt;/span>
+ &lt;span class="rating-max">/ 5.0&lt;/span>
+ &lt;/div>
+ &lt;/div>
+
+ &lt;div class="provider-meta-grid">
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">成立时间&lt;/span>
+ &lt;span class="meta-value">2014 年&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">起步价格&lt;/span>
+ &lt;span class="meta-value price-highlight">$2.5/月&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">运营主体&lt;/span>
+ &lt;span class="meta-value">美国（The Constant Company, LLC）&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">退款政策&lt;/span>
+ &lt;span class="meta-value">不退款（按小时计费随时销毁）&lt;/span>
+ &lt;/div>
+ &lt;/div>&lt;div class="provider-features-tags">&lt;span class="feature-pill">全球 34 个机房一键部署&lt;/span>&lt;span class="feature-pill">按小时计费随时销毁&lt;/span>&lt;span class="feature-pill">支持支付宝充值&lt;/span>&lt;span class="feature-pill">新用户体验金&lt;/span>&lt;/div>&lt;div class="provider-actions">&lt;a href="https://vpsfinder.github.io/category/vps-providers/vultr/" class="card-btn btn-secondary">
+ &lt;span>查看商家介绍&lt;/span>
+ &lt;/a>&lt;a href="https://www.vultr.com/?ref=9622724" class="card-btn btn-primary" target="_blank" rel="nofollow noopener sponsored">
+ &lt;span>访问官方网站&lt;/span>
+ &lt;svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14" aria-hidden="true">&lt;path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />&lt;/svg>
+ &lt;/a>
+ &lt;/div>
+&lt;/div>
+&lt;p>如果你还不了解 Vultr 的机房分布、产品线和计费方式，可以先阅读 
+ &lt;a href="https://vpsfinder.github.io/category/vps-providers/vultr/">Vultr 商家介绍&lt;/a>。本文不再重复这些信息，只聚焦这台洛杉矶机器本身的实测表现。&lt;/p>
+&lt;h2 id="测评结论速览">
+ 测评结论速览
+ &lt;a class="anchor" href="#%e6%b5%8b%e8%af%84%e7%bb%93%e8%ae%ba%e9%80%9f%e8%a7%88">#&lt;/a>
+&lt;/h2>
+&lt;p>先给赶时间的读者一个结论：这台机器的国际带宽极其充裕，硬件与磁盘也够用；但回国走普通线路，白天就有明显丢包，IP 风险评分也偏高。&lt;/p></description></item><item><title>DIYVM 香港 VPS 测评：39 元 2核2G 实测华南 22ms、晚高峰 0 丢包与三网回程</title><link>https://vpsfinder.github.io/category/vps-reviews/diyvm-hongkong-cn2/</link><pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate><guid>https://vpsfinder.github.io/category/vps-reviews/diyvm-hongkong-cn2/</guid><description>&lt;h1 id="diyvm-香港-vps-测评39-元-2核2g-实测华南-22ms晚高峰-0-丢包与三网回程">
+ DIYVM 香港 VPS 测评：39 元 2核2G 实测华南 22ms、晚高峰 0 丢包与三网回程
+ &lt;a class="anchor" href="#diyvm-%e9%a6%99%e6%b8%af-vps-%e6%b5%8b%e8%af%8439-%e5%85%83-2%e6%a0%b82g-%e5%ae%9e%e6%b5%8b%e5%8d%8e%e5%8d%97-22ms%e6%99%9a%e9%ab%98%e5%b3%b0-0-%e4%b8%a2%e5%8c%85%e4%b8%8e%e4%b8%89%e7%bd%91%e5%9b%9e%e7%a8%8b">#&lt;/a>
+&lt;/h1>
+&lt;p>香港云服务器的价值几乎全部押在网络上：延迟够不够低、晚高峰会不会丢包、三网回程到底走什么线路。这些问题光看商家宣传页是得不到答案的。&lt;/p>
+&lt;p>这次我们开通了一台 DIYVM 香港云 2G 实例，在晚间高峰时段完成了延迟、丢包、路由、硬件、带宽和 IP 属性六个维度的完整测试，下面把原始数据和解读逐项摊开。&lt;/p>
+&lt;div class="vps-provider-card" id="provider-diyvm">
+ &lt;div class="provider-card-header">
+ &lt;div class="provider-title-wrap">
+ &lt;h3 class="provider-name">DIYVM&lt;/h3>&lt;span class="provider-badge">十余年香港 CN2 直连 / 不限流量老牌商&lt;/span>&lt;/div>
+ &lt;div class="provider-rating">
+ &lt;span class="rating-stars">★&lt;/span>
+ &lt;span class="rating-score">4.6&lt;/span>
+ &lt;span class="rating-max">/ 5.0&lt;/span>
+ &lt;/div>
+ &lt;/div>
+
+ &lt;div class="provider-meta-grid">
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">成立时间&lt;/span>
+ &lt;span class="meta-value">2009 年&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">起步价格&lt;/span>
+ &lt;span class="meta-value price-highlight">¥39/月&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">运营主体&lt;/span>
+ &lt;span class="meta-value">中国香港（香港瑞歐國際網絡科技）&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">退款政策&lt;/span>
+ &lt;span class="meta-value">支持 1 年内按天退款（扣 5 元或手续费）&lt;/span>
+ &lt;/div>
+ &lt;/div>&lt;div class="provider-features-tags">&lt;span class="feature-pill">香港电信 CN2 直连&lt;/span>&lt;span class="feature-pill">全系标配不限制月流量&lt;/span>&lt;span class="feature-pill">新用户永久享超级会员价&lt;/span>&lt;span class="feature-pill">自研面板支持快照备份&lt;/span>&lt;/div>&lt;div class="provider-actions">&lt;a href="https://vpsfinder.github.io/category/vps-providers/diyvm/" class="card-btn btn-secondary">
+ &lt;span>查看商家介绍&lt;/span>
+ &lt;/a>&lt;a href="https://www.diyvm.net/page.aspx?c=referral&amp;amp;u=92308" class="card-btn btn-primary" target="_blank" rel="nofollow noopener sponsored">
+ &lt;span>访问官方网站&lt;/span>
+ &lt;svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14" aria-hidden="true">&lt;path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />&lt;/svg>
+ &lt;/a>
+ &lt;/div>
+&lt;/div>
+&lt;p>如果你还不了解这家商家的成立背景、退款政策和完整套餐，可以先阅读 
+ &lt;a href="https://vpsfinder.github.io/category/vps-providers/diyvm/">DIYVM 商家介绍&lt;/a>。本文不再重复这些信息，只聚焦这台香港机器本身的实测表现。&lt;/p></description></item><item><title>iPRaft 洛杉矶原生双 ISP 测评：住宅 IP 风控 0 分、全解锁与三网延迟丢包实测</title><link>https://vpsfinder.github.io/category/vps-reviews/ipraft-los-angeles-dual-isp/</link><pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate><guid>https://vpsfinder.github.io/category/vps-reviews/ipraft-los-angeles-dual-isp/</guid><description>&lt;h1 id="ipraft-洛杉矶原生双-isp-测评住宅-ip-风控-0-分全解锁与三网延迟丢包实测">
+ iPRaft 洛杉矶原生双 ISP 测评：住宅 IP 风控 0 分、全解锁与三网延迟丢包实测
+ &lt;a class="anchor" href="#ipraft-%e6%b4%9b%e6%9d%89%e7%9f%b6%e5%8e%9f%e7%94%9f%e5%8f%8c-isp-%e6%b5%8b%e8%af%84%e4%bd%8f%e5%ae%85-ip-%e9%a3%8e%e6%8e%a7-0-%e5%88%86%e5%85%a8%e8%a7%a3%e9%94%81%e4%b8%8e%e4%b8%89%e7%bd%91%e5%bb%b6%e8%bf%9f%e4%b8%a2%e5%8c%85%e5%ae%9e%e6%b5%8b">#&lt;/a>
+&lt;/h1>
+&lt;p>买双 ISP 住宅 IP 的人，最关心的不是跑分，而是这个 IP 在各大风控数据库眼里到底是不是“住宅”、有没有风险记录、能不能稳定访问各类海外平台。&lt;/p>
+&lt;p>这次我们开通了一台 iPRaft 洛杉矶原生双 ISP 的 micro 实例，把 IP 属性检测放在最前面，同时完成了延迟、丢包、路由、硬件与带宽测试，下面把原始数据和解读逐项摊开。&lt;/p>
+&lt;div class="vps-provider-card" id="provider-ipraft">
+ &lt;div class="provider-card-header">
+ &lt;div class="provider-title-wrap">
+ &lt;h3 class="provider-name">iPRaft&lt;/h3>&lt;span class="provider-badge">纯净住宅双 ISP / 跨境电商出海云&lt;/span>&lt;/div>
+ &lt;div class="provider-rating">
+ &lt;span class="rating-stars">★&lt;/span>
+ &lt;span class="rating-score">4.5&lt;/span>
+ &lt;span class="rating-max">/ 5.0&lt;/span>
+ &lt;/div>
+ &lt;/div>
+
+ &lt;div class="provider-meta-grid">
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">成立时间&lt;/span>
+ &lt;span class="meta-value">2018 年&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">起步价格&lt;/span>
+ &lt;span class="meta-value price-highlight">$3/月&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">运营主体&lt;/span>
+ &lt;span class="meta-value">全球节点（北美/欧洲/亚太）&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">退款政策&lt;/span>
+ &lt;span class="meta-value">支持控制台退款（按服务条款折算）&lt;/span>
+ &lt;/div>
+ &lt;/div>&lt;div class="provider-features-tags">&lt;span class="feature-pill">北美原生双 ISP 住宅 IP&lt;/span>&lt;span class="feature-pill">风控数据库 0 风险极度纯净&lt;/span>&lt;span class="feature-pill">支持 25 端口与全流媒体解锁&lt;/span>&lt;span class="feature-pill">月付 $3 起高性价比出海&lt;/span>&lt;/div>&lt;div class="provider-actions">&lt;a href="https://vpsfinder.github.io/category/vps-providers/ipraft/" class="card-btn btn-secondary">
+ &lt;span>查看商家介绍&lt;/span>
+ &lt;/a>&lt;a href="https://ipraft.com/?i04bd89" class="card-btn btn-primary" target="_blank" rel="nofollow noopener sponsored">
+ &lt;span>访问官方网站&lt;/span>
+ &lt;svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14" aria-hidden="true">&lt;path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />&lt;/svg>
+ &lt;/a>
+ &lt;/div>
+&lt;/div>
+&lt;p>如果你还不了解这家商家的双 ISP 产品线、支付方式和退款规则，可以先阅读 
+ &lt;a href="https://vpsfinder.github.io/category/vps-providers/ipraft/">iPRaft 商家介绍&lt;/a>。本文不再重复这些信息，只聚焦这台洛杉矶机器本身的实测表现。&lt;/p></description></item><item><title>WePC 纽约 Cogent 家宽测评：住宅 IP 属性、风控评分、解锁与三网延迟实测</title><link>https://vpsfinder.github.io/category/vps-reviews/wepc-newyork-cogent-residential/</link><pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate><guid>https://vpsfinder.github.io/category/vps-reviews/wepc-newyork-cogent-residential/</guid><description>&lt;h1 id="wepc-纽约-cogent-家宽测评住宅-ip-属性风控评分解锁与三网延迟实测">
+ WePC 纽约 Cogent 家宽测评：住宅 IP 属性、风控评分、解锁与三网延迟实测
+ &lt;a class="anchor" href="#wepc-%e7%ba%bd%e7%ba%a6-cogent-%e5%ae%b6%e5%ae%bd%e6%b5%8b%e8%af%84%e4%bd%8f%e5%ae%85-ip-%e5%b1%9e%e6%80%a7%e9%a3%8e%e6%8e%a7%e8%af%84%e5%88%86%e8%a7%a3%e9%94%81%e4%b8%8e%e4%b8%89%e7%bd%91%e5%bb%b6%e8%bf%9f%e5%ae%9e%e6%b5%8b">#&lt;/a>
+&lt;/h1>
+&lt;p>WePC 的纽约机型主打 Cogent 网段的原生家宽 IP。对于需要美东住宅环境的用户来说，关键问题是这个 IP 在各家风控数据库里的判定是否一致，以及哪些平台能正常使用。&lt;/p>
+&lt;p>这次我们开通了一台 WePC 纽约 Cogent 家宽实例，把 IP 属性检测放在最前面，同时完成了延迟、丢包、路由、硬件与带宽测试，下面把原始数据和解读逐项摊开。&lt;/p>
+&lt;div class="vps-provider-card" id="provider-wepc">
+ &lt;div class="provider-card-header">
+ &lt;div class="provider-title-wrap">
+ &lt;h3 class="provider-name">WePC&lt;/h3>&lt;span class="provider-badge">主打真实纽约/澳洲 Cogent 原生家宽住宅 IP&lt;/span>&lt;/div>
+ &lt;div class="provider-rating">
+ &lt;span class="rating-stars">★&lt;/span>
+ &lt;span class="rating-score">4.5&lt;/span>
+ &lt;span class="rating-max">/ 5.0&lt;/span>
+ &lt;/div>
+ &lt;/div>
+
+ &lt;div class="provider-meta-grid">
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">成立时间&lt;/span>
+ &lt;span class="meta-value">2022 年&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">起步价格&lt;/span>
+ &lt;span class="meta-value price-highlight">¥51.06/月&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">运营主体&lt;/span>
+ &lt;span class="meta-value">澳大利亚（WePC AU）&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">退款政策&lt;/span>
+ &lt;span class="meta-value">支持工单按条款折算退款&lt;/span>
+ &lt;/div>
+ &lt;/div>&lt;div class="provider-features-tags">&lt;span class="feature-pill">真实 Cogent 原生家宽&lt;/span>&lt;span class="feature-pill">覆盖纽约/澳洲等全球&lt;/span>&lt;span class="feature-pill">全平台流媒体与 AI 解锁&lt;/span>&lt;span class="feature-pill">支持支付宝与 25 端口&lt;/span>&lt;/div>&lt;div class="provider-actions">&lt;a href="https://vpsfinder.github.io/category/vps-providers/wepc/" class="card-btn btn-secondary">
+ &lt;span>查看商家介绍&lt;/span>
+ &lt;/a>&lt;a href="https://wepc.au/aff.php?aff=553" class="card-btn btn-primary" target="_blank" rel="nofollow noopener sponsored">
+ &lt;span>访问官方网站&lt;/span>
+ &lt;svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14" aria-hidden="true">&lt;path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />&lt;/svg>
+ &lt;/a>
+ &lt;/div>
+&lt;/div>
+&lt;p>如果你还不了解这家商家的家宽产品线、支付方式和退款规则，可以先阅读 
+ &lt;a href="https://vpsfinder.github.io/category/vps-providers/wepc/">WePC 商家介绍&lt;/a>。本文不再重复这些信息，只聚焦这台纽约机器本身的实测表现。&lt;/p></description></item><item><title>TmhHost 洛杉矶 CN2 测评：三网平均 159ms、11 条回程走 CN2 与晚高峰稳定性实测</title><link>https://vpsfinder.github.io/category/vps-reviews/tmhhost-los-angeles-cn2/</link><pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate><guid>https://vpsfinder.github.io/category/vps-reviews/tmhhost-los-angeles-cn2/</guid><description>&lt;h1 id="tmhhost-洛杉矶-cn2-测评三网平均-159ms11-条回程走-cn2-与晚高峰稳定性实测">
+ TmhHost 洛杉矶 CN2 测评：三网平均 159ms、11 条回程走 CN2 与晚高峰稳定性实测
+ &lt;a class="anchor" href="#tmhhost-%e6%b4%9b%e6%9d%89%e7%9f%b6-cn2-%e6%b5%8b%e8%af%84%e4%b8%89%e7%bd%91%e5%b9%b3%e5%9d%87-159ms11-%e6%9d%a1%e5%9b%9e%e7%a8%8b%e8%b5%b0-cn2-%e4%b8%8e%e6%99%9a%e9%ab%98%e5%b3%b0%e7%a8%b3%e5%ae%9a%e6%80%a7%e5%ae%9e%e6%b5%8b">#&lt;/a>
+&lt;/h1>
+&lt;p>美国 CN2 机器最大的卖点，是晚高峰依然能稳定访问。但很多商家的“CN2”只覆盖电信一家，联通和移动用户照样走普通线路，到了晚上一样会卡顿丢包。&lt;/p>
+&lt;p>这次我们开通了一台 TmhHost 美国洛杉矶 CN2 线路的 1核1G 实例，重点测试三网延迟、丢包、晚间在线监测与回程路由，同时覆盖硬件、带宽和 IP 属性，下面把原始数据和解读逐项摊开。&lt;/p>
+&lt;div class="vps-provider-card" id="provider-tmhhost">
+ &lt;div class="provider-card-header">
+ &lt;div class="provider-title-wrap">
+ &lt;h3 class="provider-name">TmhHost&lt;/h3>&lt;span class="provider-badge">美国CN2 GIA / 双ISP家宽&lt;/span>&lt;/div>
+ &lt;div class="provider-rating">
+ &lt;span class="rating-stars">★&lt;/span>
+ &lt;span class="rating-score">4.6&lt;/span>
+ &lt;span class="rating-max">/ 5.0&lt;/span>
+ &lt;/div>
+ &lt;/div>
+
+ &lt;div class="provider-meta-grid">
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">成立时间&lt;/span>
+ &lt;span class="meta-value">2019 年&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">起步价格&lt;/span>
+ &lt;span class="meta-value price-highlight">¥388/年&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">运营主体&lt;/span>
+ &lt;span class="meta-value">Newin Cloud Limited&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">退款政策&lt;/span>
+ &lt;span class="meta-value">支持按比例退款&lt;/span>
+ &lt;/div>
+ &lt;/div>&lt;div class="provider-features-tags">&lt;span class="feature-pill">美国三网CN2 GIA回程&lt;/span>&lt;span class="feature-pill">双ISP家宽原生IP&lt;/span>&lt;span class="feature-pill">联通CU 9929优化&lt;/span>&lt;span class="feature-pill">支付宝人民币付款&lt;/span>&lt;/div>&lt;div class="provider-actions">&lt;a href="https://vpsfinder.github.io/category/vps-providers/tmhhost/" class="card-btn btn-secondary">
+ &lt;span>查看商家介绍&lt;/span>
+ &lt;/a>&lt;a href="https://www.tmhhost.com/aff/KZJYHUVF" class="card-btn btn-primary" target="_blank" rel="nofollow noopener sponsored">
+ &lt;span>访问官方网站&lt;/span>
+ &lt;svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14" aria-hidden="true">&lt;path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />&lt;/svg>
+ &lt;/a>
+ &lt;/div>
+&lt;/div>
+&lt;p>如果你还不了解这家商家的背景、双 ISP 产品线和退款政策，可以先阅读 
+ &lt;a href="https://vpsfinder.github.io/category/vps-providers/tmhhost/">TmhHost 商家介绍&lt;/a>。本文不再重复这些信息，只聚焦这台洛杉矶 CN2 机器本身的实测表现。&lt;/p></description></item><item><title>Evoxt 洛杉矶测评：$2.99 月付 512M 机型 EPYC-Genoa 跑分、三网延迟与全解锁实测</title><link>https://vpsfinder.github.io/category/vps-reviews/evoxt-los-angeles/</link><pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate><guid>https://vpsfinder.github.io/category/vps-reviews/evoxt-los-angeles/</guid><description>&lt;h1 id="evoxt-洛杉矶测评299-月付-512m-机型-epyc-genoa-跑分三网延迟与全解锁实测">
+ Evoxt 洛杉矶测评：$2.99 月付 512M 机型 EPYC-Genoa 跑分、三网延迟与全解锁实测
+ &lt;a class="anchor" href="#evoxt-%e6%b4%9b%e6%9d%89%e7%9f%b6%e6%b5%8b%e8%af%84299-%e6%9c%88%e4%bb%98-512m-%e6%9c%ba%e5%9e%8b-epyc-genoa-%e8%b7%91%e5%88%86%e4%b8%89%e7%bd%91%e5%bb%b6%e8%bf%9f%e4%b8%8e%e5%85%a8%e8%a7%a3%e9%94%81%e5%ae%9e%e6%b5%8b">#&lt;/a>
+&lt;/h1>
+&lt;p>一个月不到 3 美元的 VPS，大家最担心的是硬件缩水、母机超售。Evoxt 最便宜的 VM-0.5 只有 512MB 内存和 5GB 硬盘，但它用的是 AMD 最新一代 EPYC-Genoa 处理器。&lt;/p>
+&lt;p>这次我们开通了一台 Evoxt 洛杉矶机房的 VM-0.5 实例，从延迟、丢包、路由、硬件、带宽和 IP 属性六个维度做了完整测试，看看这个价位到底能买到什么。&lt;/p>
+&lt;div class="vps-provider-card" id="provider-evoxt">
+ &lt;div class="provider-card-header">
+ &lt;div class="provider-title-wrap">
+ &lt;h3 class="provider-name">Evoxt&lt;/h3>&lt;span class="provider-badge">低门槛月付 / 全球10&amp;#43;机房&lt;/span>&lt;/div>
+ &lt;div class="provider-rating">
+ &lt;span class="rating-stars">★&lt;/span>
+ &lt;span class="rating-score">4.5&lt;/span>
+ &lt;span class="rating-max">/ 5.0&lt;/span>
+ &lt;/div>
+ &lt;/div>
+
+ &lt;div class="provider-meta-grid">
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">成立时间&lt;/span>
+ &lt;span class="meta-value">2020 年&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">起步价格&lt;/span>
+ &lt;span class="meta-value price-highlight">$2.99/月&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">运营主体&lt;/span>
+ &lt;span class="meta-value">马来西亚 (华裔团队)&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">退款政策&lt;/span>
+ &lt;span class="meta-value">支持7天退款保障（依条款）&lt;/span>
+ &lt;/div>
+ &lt;/div>&lt;div class="provider-features-tags">&lt;span class="feature-pill">最低$2.99灵活月付&lt;/span>&lt;span class="feature-pill">标配免费每周异地备份&lt;/span>&lt;span class="feature-pill">AMD EPYC高频硬件&lt;/span>&lt;span class="feature-pill">全球10&amp;#43;机房自营ASN&lt;/span>&lt;/div>&lt;div class="provider-actions">&lt;a href="https://vpsfinder.github.io/category/vps-providers/evoxt/" class="card-btn btn-secondary">
+ &lt;span>查看商家介绍&lt;/span>
+ &lt;/a>&lt;a href="https://console.evoxt.com/aff.php?aff=1780" class="card-btn btn-primary" target="_blank" rel="nofollow noopener sponsored">
+ &lt;span>访问官方网站&lt;/span>
+ &lt;svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14" aria-hidden="true">&lt;path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />&lt;/svg>
+ &lt;/a>
+ &lt;/div>
+&lt;/div>
+&lt;p>如果你还不了解这家商家的机房分布、计费方式和退款政策，可以先阅读 
+ &lt;a href="https://vpsfinder.github.io/category/vps-providers/evoxt/">Evoxt 商家介绍&lt;/a>。本文不再重复这些信息，只聚焦这台洛杉矶机器本身的实测表现。&lt;/p></description></item><item><title>Kamatera 洛杉矶测评：万兆端口实测 13.7Gbps、Sapphire Rapids 跑分与三网丢包实测</title><link>https://vpsfinder.github.io/category/vps-reviews/kamatera-los-angeles/</link><pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate><guid>https://vpsfinder.github.io/category/vps-reviews/kamatera-los-angeles/</guid><description>&lt;h1 id="kamatera-洛杉矶测评万兆端口实测-137gbpssapphire-rapids-跑分与三网丢包实测">
+ Kamatera 洛杉矶测评：万兆端口实测 13.7Gbps、Sapphire Rapids 跑分与三网丢包实测
+ &lt;a class="anchor" href="#kamatera-%e6%b4%9b%e6%9d%89%e7%9f%b6%e6%b5%8b%e8%af%84%e4%b8%87%e5%85%86%e7%ab%af%e5%8f%a3%e5%ae%9e%e6%b5%8b-137gbpssapphire-rapids-%e8%b7%91%e5%88%86%e4%b8%8e%e4%b8%89%e7%bd%91%e4%b8%a2%e5%8c%85%e5%ae%9e%e6%b5%8b">#&lt;/a>
+&lt;/h1>
+&lt;p>Kamatera 主打企业级云服务器，宣传最多的是万兆端口与按小时计费。这样的配置放在美国本土当然够用，但从国内访问会是什么体验，需要实测说话。&lt;/p>
+&lt;p>这次我们开通了一台 Kamatera 洛杉矶机房的 1核1G 实例，重点测试带宽、硬件与国内三网延迟丢包，同时覆盖 IP 属性与解锁，下面把原始数据和解读逐项摊开。&lt;/p>
+&lt;div class="vps-provider-card" id="provider-kamatera">
+ &lt;div class="provider-card-header">
+ &lt;div class="provider-title-wrap">
+ &lt;h3 class="provider-name">Kamatera&lt;/h3>&lt;span class="provider-badge">最高 10Gbps 万兆带宽 / 企业级按小时计费云&lt;/span>&lt;/div>
+ &lt;div class="provider-rating">
+ &lt;span class="rating-stars">★&lt;/span>
+ &lt;span class="rating-score">4.5&lt;/span>
+ &lt;span class="rating-max">/ 5.0&lt;/span>
+ &lt;/div>
+ &lt;/div>
+
+ &lt;div class="provider-meta-grid">
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">成立时间&lt;/span>
+ &lt;span class="meta-value">1995 年&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">起步价格&lt;/span>
+ &lt;span class="meta-value price-highlight">$4/月&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">运营主体&lt;/span>
+ &lt;span class="meta-value">美国 / 以色列（Kamatera Inc.）&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">退款政策&lt;/span>
+ &lt;span class="meta-value">按小时计费销毁即停扣（提供 30 天免费试用）&lt;/span>
+ &lt;/div>
+ &lt;/div>&lt;div class="provider-features-tags">&lt;span class="feature-pill">最高 10Gbps 万兆大带宽&lt;/span>&lt;span class="feature-pill">按小时弹性计费随时销毁&lt;/span>&lt;span class="feature-pill">30 天免费试用（$100 体验金）&lt;/span>&lt;span class="feature-pill">全球 21&amp;#43; 机房含罗马尼亚离岸&lt;/span>&lt;/div>&lt;div class="provider-actions">&lt;a href="https://vpsfinder.github.io/category/vps-providers/kamatera/" class="card-btn btn-secondary">
+ &lt;span>查看商家介绍&lt;/span>
+ &lt;/a>&lt;a href="https://go.cloudwm.com/visit/?bta=36679&amp;amp;brand=kamatera" class="card-btn btn-primary" target="_blank" rel="nofollow noopener sponsored">
+ &lt;span>访问官方网站&lt;/span>
+ &lt;svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14" aria-hidden="true">&lt;path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />&lt;/svg>
+ &lt;/a>
+ &lt;/div>
+&lt;/div>
+&lt;p>如果你还不了解这家商家的机房分布、30 天免费试用和计费方式，可以先阅读 
+ &lt;a href="https://vpsfinder.github.io/category/vps-providers/kamatera/">Kamatera 商家介绍&lt;/a>。本文不再重复这些信息，只聚焦这台洛杉矶机器本身的实测表现。&lt;/p></description></item><item><title>ColoCrossing 纽约水牛城测评：$3.95 月付 1核1G 三网延迟、回程路由、跑分与 IP 解锁实测</title><link>https://vpsfinder.github.io/category/vps-reviews/colocrossing-buffalo-ny/</link><pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate><guid>https://vpsfinder.github.io/category/vps-reviews/colocrossing-buffalo-ny/</guid><description>&lt;h1 id="colocrossing-纽约水牛城测评395-月付-1核1g-三网延迟回程路由跑分与-ip-解锁实测">
+ ColoCrossing 纽约水牛城测评：$3.95 月付 1核1G 三网延迟、回程路由、跑分与 IP 解锁实测
+ &lt;a class="anchor" href="#colocrossing-%e7%ba%bd%e7%ba%a6%e6%b0%b4%e7%89%9b%e5%9f%8e%e6%b5%8b%e8%af%84395-%e6%9c%88%e4%bb%98-1%e6%a0%b81g-%e4%b8%89%e7%bd%91%e5%bb%b6%e8%bf%9f%e5%9b%9e%e7%a8%8b%e8%b7%af%e7%94%b1%e8%b7%91%e5%88%86%e4%b8%8e-ip-%e8%a7%a3%e9%94%81%e5%ae%9e%e6%b5%8b">#&lt;/a>
+&lt;/h1>
+&lt;p>ColoCrossing 是很多美国廉价 VPS 背后的机房运营商，自家也直接出售云服务器，主打低月付与大流量。水牛城机房位于美东，到国内的距离比美西远得多。&lt;/p>
+&lt;p>这次我们开通了一台 ColoCrossing 水牛城机房的 1核1G 实例，从延迟、路由、硬件、带宽和 IP 属性五个维度做了测试，看看这台美东机器适合做什么、不适合做什么。&lt;/p>
+&lt;div class="vps-provider-card" id="provider-colocrossing">
+ &lt;div class="provider-card-header">
+ &lt;div class="provider-title-wrap">
+ &lt;h3 class="provider-name">ColoCrossing&lt;/h3>&lt;span class="provider-badge">美国老牌自建机房 / 20TB 大流量便宜机皇&lt;/span>&lt;/div>
+ &lt;div class="provider-rating">
+ &lt;span class="rating-stars">★&lt;/span>
+ &lt;span class="rating-score">4.4&lt;/span>
+ &lt;span class="rating-max">/ 5.0&lt;/span>
+ &lt;/div>
+ &lt;/div>
+
+ &lt;div class="provider-meta-grid">
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">成立时间&lt;/span>
+ &lt;span class="meta-value">2003 年&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">起步价格&lt;/span>
+ &lt;span class="meta-value price-highlight">$3.95/月&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">运营主体&lt;/span>
+ &lt;span class="meta-value">美国纽约（ColoCrossing / HostPapa）&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">退款政策&lt;/span>
+ &lt;span class="meta-value">退款保障不明确，需多加注意&lt;/span>
+ &lt;/div>
+ &lt;/div>&lt;div class="provider-features-tags">&lt;span class="feature-pill">自建美国老牌数据中心&lt;/span>&lt;span class="feature-pill">标配 20TB 超大月流量&lt;/span>&lt;span class="feature-pill">1Gbps 端口大带宽&lt;/span>&lt;span class="feature-pill">大促特惠十几美元每年&lt;/span>&lt;/div>&lt;div class="provider-actions">&lt;a href="https://vpsfinder.github.io/category/vps-providers/colocrossing/" class="card-btn btn-secondary">
+ &lt;span>查看商家介绍&lt;/span>
+ &lt;/a>&lt;a href="https://cloud.colocrossing.com/aff.php?aff=1064" class="card-btn btn-primary" target="_blank" rel="nofollow noopener sponsored">
+ &lt;span>访问官方网站&lt;/span>
+ &lt;svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14" aria-hidden="true">&lt;path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />&lt;/svg>
+ &lt;/a>
+ &lt;/div>
+&lt;/div>
+&lt;p>如果你还不了解这家商家的机房背景、流量政策和退款条款，可以先阅读 
+ &lt;a href="https://vpsfinder.github.io/category/vps-providers/colocrossing/">ColoCrossing 商家介绍&lt;/a>。本文不再重复这些信息，只聚焦这台水牛城机器本身的实测表现。&lt;/p></description></item></channel></rss>

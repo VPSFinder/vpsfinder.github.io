@@ -1,0 +1,13 @@
+# 忽略所有文件和文件夹
+*
+
+# 不忽略指定的文件（在这里添加你想要保留的文件）
+!github/
+!github/**
+!public/
+!public/**
+!static/
+!static/e5582f0750c74e5096ecb5de3a53dffb.txt
+!.gitignore
+!README.md
+!LICENSE
