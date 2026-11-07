@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VPS 真实性能测评室 · 机房节点深度实测 on 寻机匠</title><link>https://vpsfinder.github.io/category/vps-reviews/</link><description>Recent content in VPS 真实性能测评室 · 机房节点深度实测 on 寻机匠</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Thu, 29 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://vpsfinder.github.io/category/vps-reviews/index.xml" rel="self" type="application/rss+xml"/><item><title>丽萨主机洛杉矶 4837 双 ISP 测评：四库判定家宽、140 余节点持续 Ping 与三网回程实测</title><link>https://vpsfinder.github.io/category/vps-reviews/lisahost-los-angeles-4837-dual-isp/</link><pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate><guid>https://vpsfinder.github.io/category/vps-reviews/lisahost-los-angeles-4837-dual-isp/</guid><description>&lt;h1 id="丽萨主机洛杉矶-4837-双-isp-测评四库判定家宽140-余节点持续-ping-与三网回程实测">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VPS 真实性能测评室 · 机房节点深度实测 on 寻机匠</title><link>https://vpsfinder.github.io/category/vps-reviews/</link><description>Recent content in VPS 真实性能测评室 · 机房节点深度实测 on 寻机匠</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Sat, 07 Nov 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://vpsfinder.github.io/category/vps-reviews/index.xml" rel="self" type="application/rss+xml"/><item><title>丽萨主机洛杉矶 4837 双 ISP 测评：四库判定家宽、140 余节点持续 Ping 与三网回程实测</title><link>https://vpsfinder.github.io/category/vps-reviews/lisahost-los-angeles-4837-dual-isp/</link><pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate><guid>https://vpsfinder.github.io/category/vps-reviews/lisahost-los-angeles-4837-dual-isp/</guid><description>&lt;h1 id="丽萨主机洛杉矶-4837-双-isp-测评四库判定家宽140-余节点持续-ping-与三网回程实测">
  丽萨主机洛杉矶 4837 双 ISP 测评：四库判定家宽、140 余节点持续 Ping 与三网回程实测
  &lt;a class="anchor" href="#%e4%b8%bd%e8%90%a8%e4%b8%bb%e6%9c%ba%e6%b4%9b%e6%9d%89%e7%9f%b6-4837-%e5%8f%8c-isp-%e6%b5%8b%e8%af%84%e5%9b%9b%e5%ba%93%e5%88%a4%e5%ae%9a%e5%ae%b6%e5%ae%bd140-%e4%bd%99%e8%8a%82%e7%82%b9%e6%8c%81%e7%bb%ad-ping-%e4%b8%8e%e4%b8%89%e7%bd%91%e5%9b%9e%e7%a8%8b%e5%ae%9e%e6%b5%8b">#&lt;/a>
 &lt;/h1>
@@ -657,4 +657,47 @@
  &lt;/div>
 &lt;/div>
 &lt;p>如果你还不了解这家商家的机房背景、流量政策和退款条款，可以先阅读 
- &lt;a href="https://vpsfinder.github.io/category/vps-providers/colocrossing/">ColoCrossing 商家介绍&lt;/a>。本文不再重复这些信息，只聚焦这台水牛城机器本身的实测表现。&lt;/p></description></item></channel></rss>
+ &lt;a href="https://vpsfinder.github.io/category/vps-providers/colocrossing/">ColoCrossing 商家介绍&lt;/a>。本文不再重复这些信息，只聚焦这台水牛城机器本身的实测表现。&lt;/p></description></item><item><title>HostDare 洛杉矶 CN2 测评：三网平均 168ms、电信 CN2 加联通 9929 回程与 NVMe 跑分实测</title><link>https://vpsfinder.github.io/category/vps-reviews/hostdare-los-angeles-cn2/</link><pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate><guid>https://vpsfinder.github.io/category/vps-reviews/hostdare-los-angeles-cn2/</guid><description>&lt;h1 id="hostdare-洛杉矶-cn2-测评三网平均-168ms电信-cn2-加联通-9929-回程与-nvme-跑分实测">
+ HostDare 洛杉矶 CN2 测评：三网平均 168ms、电信 CN2 加联通 9929 回程与 NVMe 跑分实测
+ &lt;a class="anchor" href="#hostdare-%e6%b4%9b%e6%9d%89%e7%9f%b6-cn2-%e6%b5%8b%e8%af%84%e4%b8%89%e7%bd%91%e5%b9%b3%e5%9d%87-168ms%e7%94%b5%e4%bf%a1-cn2-%e5%8a%a0%e8%81%94%e9%80%9a-9929-%e5%9b%9e%e7%a8%8b%e4%b8%8e-nvme-%e8%b7%91%e5%88%86%e5%ae%9e%e6%b5%8b">#&lt;/a>
+&lt;/h1>
+&lt;p>HostDare 的 CSSD 系列一直被当作搬瓦工 CN2 GIA 的平价替代，官网标注电信 CN2 GIA、联通 9929 与移动 CMIN2 三网回程优化。价格只有高端专线的一半左右，线路到底能做到几成，是很多人下单前最关心的问题。&lt;/p>
+&lt;p>这次我们测试的是一台长期运行的 HostDare 洛杉矶 CN2-GIA 入门实例，重点看三网延迟、持续丢包与回程路由，同时覆盖硬件、带宽和 IP 属性，下面把原始数据和解读逐项摊开。&lt;/p>
+&lt;div class="vps-provider-card" id="provider-hostdare">
+ &lt;div class="provider-card-header">
+ &lt;div class="provider-title-wrap">
+ &lt;h3 class="provider-name">HostDare&lt;/h3>&lt;span class="provider-badge">十年老牌洛杉矶优化线路&lt;/span>&lt;/div>
+ &lt;div class="provider-rating">
+ &lt;span class="rating-stars">★&lt;/span>
+ &lt;span class="rating-score">4.5&lt;/span>
+ &lt;span class="rating-max">/ 5.0&lt;/span>
+ &lt;/div>
+ &lt;/div>
+
+ &lt;div class="provider-meta-grid">
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">成立时间&lt;/span>
+ &lt;span class="meta-value">2015 年&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">起步价格&lt;/span>
+ &lt;span class="meta-value price-highlight">$25.99/年&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">运营主体&lt;/span>
+ &lt;span class="meta-value">美国加州&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">退款政策&lt;/span>
+ &lt;span class="meta-value">支持3天退款保证&lt;/span>
+ &lt;/div>
+ &lt;/div>&lt;div class="provider-features-tags">&lt;span class="feature-pill">CN2 GIA/9929/CMIN2&lt;/span>&lt;span class="feature-pill">NVMe高速固态&lt;/span>&lt;span class="feature-pill">十年稳定老牌&lt;/span>&lt;span class="feature-pill">常年大额折扣促销&lt;/span>&lt;/div>&lt;div class="provider-actions">&lt;a href="https://vpsfinder.github.io/category/vps-providers/hostdare/" class="card-btn btn-secondary">
+ &lt;span>查看商家介绍&lt;/span>
+ &lt;/a>&lt;a href="https://bill.hostdare.com/aff.php?aff=3925" class="card-btn btn-primary" target="_blank" rel="nofollow noopener sponsored">
+ &lt;span>访问官方网站&lt;/span>
+ &lt;svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14" aria-hidden="true">&lt;path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />&lt;/svg>
+ &lt;/a>
+ &lt;/div>
+&lt;/div>
+&lt;p>如果你还不了解这家商家的运营背景、CSSD 与 CKVM 产品线和优惠码，可以先阅读 
+ &lt;a href="https://vpsfinder.github.io/category/vps-providers/hostdare/">HostDare 商家介绍&lt;/a>。本文不再重复这些信息，只聚焦这台洛杉矶 CN2 机器本身的实测表现。&lt;/p></description></item></channel></rss>

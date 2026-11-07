@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VPSFinder (寻机匠) - 专业VPS导航与智能选型筛选平台 on 寻机匠</title><link>https://vpsfinder.github.io/</link><description>Recent content in VPSFinder (寻机匠) - 专业VPS导航与智能选型筛选平台 on 寻机匠</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Thu, 05 Nov 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://vpsfinder.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>VPS IP被墙怎么办：判断方法、处理步骤与支持免费换IP的商家推荐（2026）</title><link>https://vpsfinder.github.io/category/vps-troubleshooting/ip-blocked-replace-guide/</link><pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate><guid>https://vpsfinder.github.io/category/vps-troubleshooting/ip-blocked-replace-guide/</guid><description>&lt;h1 id="vps-ip被墙怎么办判断方法处理步骤与支持免费换ip的商家">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VPSFinder (寻机匠) - 专业VPS导航与智能选型筛选平台 on 寻机匠</title><link>https://vpsfinder.github.io/</link><description>Recent content in VPSFinder (寻机匠) - 专业VPS导航与智能选型筛选平台 on 寻机匠</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Sat, 07 Nov 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://vpsfinder.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>VPS IP被墙怎么办：判断方法、处理步骤与支持免费换IP的商家推荐（2026）</title><link>https://vpsfinder.github.io/category/vps-troubleshooting/ip-blocked-replace-guide/</link><pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate><guid>https://vpsfinder.github.io/category/vps-troubleshooting/ip-blocked-replace-guide/</guid><description>&lt;h1 id="vps-ip被墙怎么办判断方法处理步骤与支持免费换ip的商家">
  VPS IP被墙怎么办：判断方法、处理步骤与支持免费换IP的商家
  &lt;a class="anchor" href="#vps-ip%e8%a2%ab%e5%a2%99%e6%80%8e%e4%b9%88%e5%8a%9e%e5%88%a4%e6%96%ad%e6%96%b9%e6%b3%95%e5%a4%84%e7%90%86%e6%ad%a5%e9%aa%a4%e4%b8%8e%e6%94%af%e6%8c%81%e5%85%8d%e8%b4%b9%e6%8d%a2ip%e7%9a%84%e5%95%86%e5%ae%b6">#&lt;/a>
 &lt;/h1>
@@ -358,7 +358,54 @@
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;p>简单来说，想覆盖多个国家市场选丽萨主机，账号数量多、预算有限选 iPRaft，需要做直播选 WePC，对账号环境要求最高选 NodeMach。下面先讲 IP 类型和配置，再逐家展开。&lt;/p></description></item><item><title>Docker VPS推荐：自建网盘、反代与开发环境需要多大内存（2026）</title><link>https://vpsfinder.github.io/category/vps-usecases/docker-selfhosted-services/</link><pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate><guid>https://vpsfinder.github.io/category/vps-usecases/docker-selfhosted-services/</guid><description>&lt;h1 id="docker-vps推荐自建网盘反代与开发环境需要多大内存">
+&lt;p>简单来说，想覆盖多个国家市场选丽萨主机，账号数量多、预算有限选 iPRaft，需要做直播选 WePC，对账号环境要求最高选 NodeMach。下面先讲 IP 类型和配置，再逐家展开。&lt;/p></description></item><item><title>VPS自建邮件进垃圾箱怎么办：25端口检测、rDNS反向解析设置与开放25端口的VPS推荐（2026）</title><link>https://vpsfinder.github.io/category/vps-troubleshooting/mail-server-rdns-port25/</link><pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate><guid>https://vpsfinder.github.io/category/vps-troubleshooting/mail-server-rdns-port25/</guid><description>&lt;h1 id="vps自建邮件进垃圾箱怎么办25端口检测rdns设置与开放25端口的vps">
+ VPS自建邮件进垃圾箱怎么办：25端口检测、rDNS设置与开放25端口的VPS
+ &lt;a class="anchor" href="#vps%e8%87%aa%e5%bb%ba%e9%82%ae%e4%bb%b6%e8%bf%9b%e5%9e%83%e5%9c%be%e7%ae%b1%e6%80%8e%e4%b9%88%e5%8a%9e25%e7%ab%af%e5%8f%a3%e6%a3%80%e6%b5%8brdns%e8%ae%be%e7%bd%ae%e4%b8%8e%e5%bc%80%e6%94%be25%e7%ab%af%e5%8f%a3%e7%9a%84vps">#&lt;/a>
+&lt;/h1>
+&lt;p>在 VPS 上装好邮局程序，结果信件要么根本发不出去，要么一到对方邮箱就进了垃圾箱。问题通常出在三个环节：25 端口有没有被商家封掉、IP 有没有设置反向解析，以及域名的 SPF、DKIM 记录是否齐全。&lt;/p>
+&lt;p>这篇文章先讲怎么判断问题出在哪一环，再按顺序给出处理办法，最后对比四家在我们测评中 25 端口出站可用的商家：GreenCloud、Kamatera、JustHost 与 CloudCone，每家附上主流邮箱的连通结果和套餐表。&lt;/p>
+&lt;h2 id="开放25端口的vps速览">
+ 开放25端口的VPS速览
+ &lt;a class="anchor" href="#%e5%bc%80%e6%94%be25%e7%ab%af%e5%8f%a3%e7%9a%84vps%e9%80%9f%e8%a7%88">#&lt;/a>
+&lt;/h2>
+&lt;p>下表按我们测评中各家的邮箱连通情况排序，价格为官网当前标价。看完已经有倾向的话，可以直接点击表格中的链接前往官网，下文再逐家展开连通结果与注意事项：&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">商家&lt;/th>
+ &lt;th style="text-align: left">25 端口实测&lt;/th>
+ &lt;th style="text-align: left">起步价&lt;/th>
+ &lt;th style="text-align: left">前往官网&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">GreenCloud&lt;/td>
+ &lt;td style="text-align: left">可用，Gmail、QQ 均通，未进黑名单&lt;/td>
+ &lt;td style="text-align: left">$6/月&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://greencloudvps.com/billing/aff.php?aff=8209" class="aff-link aff-inline" target="_blank" rel="nofollow noopener sponsored">查看 GreenCloud Ryzen&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Kamatera&lt;/td>
+ &lt;td style="text-align: left">可用，Gmail、QQ 均通&lt;/td>
+ &lt;td style="text-align: left">$4/月&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://go.cloudwm.com/visit/?bta=36679&amp;amp;brand=kamatera" class="aff-link aff-inline" target="_blank" rel="nofollow noopener sponsored">查看 Kamatera 云服务器&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">JustHost&lt;/td>
+ &lt;td style="text-align: left">可用，Gmail 不通，可迁机房换 IP&lt;/td>
+ &lt;td style="text-align: left">$3.81/月&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://justhost.ru/?ref=215407" class="aff-link aff-inline" target="_blank" rel="nofollow noopener sponsored">查看 JustHost VPS&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">CloudCone&lt;/td>
+ &lt;td style="text-align: left">可用，Gmail 不通，条款禁群发&lt;/td>
+ &lt;td style="text-align: left">$28/年&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://app.cloudcone.com/?ref=11765" class="aff-link aff-inline" target="_blank" rel="nofollow noopener sponsored">查看 CloudCone SSD VPS&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>简单来说，收件人用 Gmail 多的选 GreenCloud 或 Kamatera；想在 IP 进黑名单时能自助换 IP 的选 JustHost；只发少量通知邮件、预算最低的选 CloudCone 年付。&lt;/p></description></item><item><title>Docker VPS推荐：自建网盘、反代与开发环境需要多大内存（2026）</title><link>https://vpsfinder.github.io/category/vps-usecases/docker-selfhosted-services/</link><pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate><guid>https://vpsfinder.github.io/category/vps-usecases/docker-selfhosted-services/</guid><description>&lt;h1 id="docker-vps推荐自建网盘反代与开发环境需要多大内存">
  Docker VPS推荐：自建网盘、反代与开发环境需要多大内存
  &lt;a class="anchor" href="#docker-vps%e6%8e%a8%e8%8d%90%e8%87%aa%e5%bb%ba%e7%bd%91%e7%9b%98%e5%8f%8d%e4%bb%a3%e4%b8%8e%e5%bc%80%e5%8f%91%e7%8e%af%e5%a2%83%e9%9c%80%e8%a6%81%e5%a4%9a%e5%a4%a7%e5%86%85%e5%ad%98">#&lt;/a>
 &lt;/h1>
@@ -405,7 +452,66 @@
  &lt;/tr>
  &lt;/tbody>
 &lt;/table>
-&lt;p>简单来说，容器多、要跑数据库选 GreenCloud，要存大量文件选 CloudCone，网盘同步和下载流量大选 ColoCrossing，只是临时折腾或测试选 Vultr。下面先讲资源需求，再逐家展开。&lt;/p></description></item><item><title>按小时计费VPS推荐：随用随开、用完即删的测试与开发云服务器（2026）</title><link>https://vpsfinder.github.io/category/vps-usecases/hourly-billing-testing/</link><pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate><guid>https://vpsfinder.github.io/category/vps-usecases/hourly-billing-testing/</guid><description>&lt;h1 id="按小时计费vps推荐随用随开用完即删的测试与开发云服务器">
+&lt;p>简单来说，容器多、要跑数据库选 GreenCloud，要存大量文件选 CloudCone，网盘同步和下载流量大选 ColoCrossing，只是临时折腾或测试选 Vultr。下面先讲资源需求，再逐家展开。&lt;/p></description></item><item><title>VPS误删数据怎么恢复：快照回滚、备份恢复步骤与自带快照备份的VPS推荐（2026）</title><link>https://vpsfinder.github.io/category/vps-troubleshooting/backup-snapshot-disaster/</link><pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate><guid>https://vpsfinder.github.io/category/vps-troubleshooting/backup-snapshot-disaster/</guid><description>&lt;h1 id="vps误删数据怎么恢复快照回滚备份恢复与自带快照备份的vps">
+ VPS误删数据怎么恢复：快照回滚、备份恢复与自带快照备份的VPS
+ &lt;a class="anchor" href="#vps%e8%af%af%e5%88%a0%e6%95%b0%e6%8d%ae%e6%80%8e%e4%b9%88%e6%81%a2%e5%a4%8d%e5%bf%ab%e7%85%a7%e5%9b%9e%e6%bb%9a%e5%a4%87%e4%bb%bd%e6%81%a2%e5%a4%8d%e4%b8%8e%e8%87%aa%e5%b8%a6%e5%bf%ab%e7%85%a7%e5%a4%87%e4%bb%bd%e7%9a%84vps">#&lt;/a>
+&lt;/h1>
+&lt;p>一条 &lt;code>rm -rf&lt;/code> 敲错了目录，一次系统升级之后网站白屏，或者服务器被人入侵改得面目全非，这些都是用 VPS 迟早会遇到的事故。能不能救回来，几乎完全取决于出事之前有没有留下快照或备份，以及出事之后第一步做得对不对。&lt;/p>
+&lt;p>这篇文章先讲怎么判断数据还能不能救，再讲有快照和没快照两种情况下的处理办法，最后对比六家自带快照或备份功能的商家：Evoxt、搬瓦工、DIYVM、GreenCloud、Vultr 与 CloudCone，每家都附上套餐表。&lt;/p>
+&lt;h2 id="自带快照备份的vps速览">
+ 自带快照备份的VPS速览
+ &lt;a class="anchor" href="#%e8%87%aa%e5%b8%a6%e5%bf%ab%e7%85%a7%e5%a4%87%e4%bb%bd%e7%9a%84vps%e9%80%9f%e8%a7%88">#&lt;/a>
+&lt;/h2>
+&lt;p>下表按各家快照与备份的方式整理，价格为官网当前标价。看完已经有倾向的话，可以直接点击表格中的链接前往官网，下文再逐家展开具体机制和适合的使用场景：&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">商家&lt;/th>
+ &lt;th style="text-align: left">快照与备份方式&lt;/th>
+ &lt;th style="text-align: left">起步价&lt;/th>
+ &lt;th style="text-align: left">前往官网&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">Evoxt&lt;/td>
+ &lt;td style="text-align: left">免费每周异地自动备份&lt;/td>
+ &lt;td style="text-align: left">$2.99/月&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://console.evoxt.com/aff.php?aff=1780" class="aff-link aff-inline" target="_blank" rel="nofollow noopener sponsored">查看 Evoxt VPS&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">搬瓦工&lt;/td>
+ &lt;td style="text-align: left">KiwiVM 控制台快照&lt;/td>
+ &lt;td style="text-align: left">$52.99/半年&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://bwh81.net/aff.php?aff=75629" class="aff-link aff-inline" target="_blank" rel="nofollow noopener sponsored">查看搬瓦工 VPS&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">DIYVM&lt;/td>
+ &lt;td style="text-align: left">自研面板一键快照&lt;/td>
+ &lt;td style="text-align: left">¥39/月&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.diyvm.net/page.aspx?c=referral&amp;amp;u=92308" class="aff-link aff-inline" target="_blank" rel="nofollow noopener sponsored">查看 DIYVM 香港云&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">GreenCloud&lt;/td>
+ &lt;td style="text-align: left">每台附赠 1 个免费快照&lt;/td>
+ &lt;td style="text-align: left">$6/月&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://greencloudvps.com/billing/aff.php?aff=8209" class="aff-link aff-inline" target="_blank" rel="nofollow noopener sponsored">查看 GreenCloud Ryzen&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Vultr&lt;/td>
+ &lt;td style="text-align: left">快照与自动备份，单独计费&lt;/td>
+ &lt;td style="text-align: left">$5/月&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://www.vultr.com/?ref=9622724" class="aff-link aff-inline" target="_blank" rel="nofollow noopener sponsored">查看 Vultr 云服务器&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">CloudCone&lt;/td>
+ &lt;td style="text-align: left">可按需开启快照与自动备份&lt;/td>
+ &lt;td style="text-align: left">$28/年&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://app.cloudcone.com/?ref=11765" class="aff-link aff-inline" target="_blank" rel="nofollow noopener sponsored">查看 CloudCone SSD VPS&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>简单来说，不想自己操心备份的选 Evoxt，它每周自动做一次异地备份；习惯改动前手动拍快照的选搬瓦工或 DIYVM；需要随时快照、按小时计费的开发环境选 Vultr。&lt;/p></description></item><item><title>按小时计费VPS推荐：随用随开、用完即删的测试与开发云服务器（2026）</title><link>https://vpsfinder.github.io/category/vps-usecases/hourly-billing-testing/</link><pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate><guid>https://vpsfinder.github.io/category/vps-usecases/hourly-billing-testing/</guid><description>&lt;h1 id="按小时计费vps推荐随用随开用完即删的测试与开发云服务器">
  按小时计费VPS推荐：随用随开、用完即删的测试与开发云服务器
  &lt;a class="anchor" href="#%e6%8c%89%e5%b0%8f%e6%97%b6%e8%ae%a1%e8%b4%b9vps%e6%8e%a8%e8%8d%90%e9%9a%8f%e7%94%a8%e9%9a%8f%e5%bc%80%e7%94%a8%e5%ae%8c%e5%8d%b3%e5%88%a0%e7%9a%84%e6%b5%8b%e8%af%95%e4%b8%8e%e5%bc%80%e5%8f%91%e4%ba%91%e6%9c%8d%e5%8a%a1%e5%99%a8">#&lt;/a>
 &lt;/h1>
@@ -462,7 +568,53 @@
  什么时候比年付更划算
  &lt;a class="anchor" href="#%e4%bb%80%e4%b9%88%e6%97%b6%e5%80%99%e6%af%94%e5%b9%b4%e4%bb%98%e6%9b%b4%e5%88%92%e7%ae%97">#&lt;/a>
 &lt;/h3>
-&lt;p>按小时计费的单价通常比年付高，同样 1GB 内存，年付特价机一年二十多美元，按小时计费跑满一年要贵一倍以上。所以它适合的是短期和不确定的需求，长期运行的固定业务还是年付更省钱：&lt;/p></description></item><item><title>游戏服务器VPS推荐：我的世界、幻兽帕鲁与泰拉瑞亚联机服需要多大配置（2026）</title><link>https://vpsfinder.github.io/category/vps-usecases/game-server-hosting/</link><pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate><guid>https://vpsfinder.github.io/category/vps-usecases/game-server-hosting/</guid><description>&lt;h1 id="游戏服务器vps推荐我的世界幻兽帕鲁与泰拉瑞亚联机服需要多大配置">
+&lt;p>按小时计费的单价通常比年付高，同样 1GB 内存，年付特价机一年二十多美元，按小时计费跑满一年要贵一倍以上。所以它适合的是短期和不确定的需求，长期运行的固定业务还是年付更省钱：&lt;/p></description></item><item><title>Nginx Proxy Manager教程：Docker部署图形化反代、免费SSL证书与502报错排查，附反代入口机VPS推荐（2026）</title><link>https://vpsfinder.github.io/category/vps-troubleshooting/nginx-proxy-manager-setup/</link><pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate><guid>https://vpsfinder.github.io/category/vps-troubleshooting/nginx-proxy-manager-setup/</guid><description>&lt;h1 id="nginx-proxy-manager教程docker部署图形化反代免费ssl与502报错排查">
+ Nginx Proxy Manager教程：Docker部署图形化反代、免费SSL与502报错排查
+ &lt;a class="anchor" href="#nginx-proxy-manager%e6%95%99%e7%a8%8bdocker%e9%83%a8%e7%bd%b2%e5%9b%be%e5%bd%a2%e5%8c%96%e5%8f%8d%e4%bb%a3%e5%85%8d%e8%b4%b9ssl%e4%b8%8e502%e6%8a%a5%e9%94%99%e6%8e%92%e6%9f%a5">#&lt;/a>
+&lt;/h1>
+&lt;p>一台 VPS 上放了博客、网盘和几个 Docker 服务之后，Nginx 配置文件会越写越多，每加一个域名都要复制一段 server 块，再手动申请证书。哪天证书忘了续期，网站就会直接打不开。&lt;/p>
+&lt;p>Nginx Proxy Manager（下文简称 NPM）把这些操作搬到了网页界面里：填域名、填后端地址、勾选 SSL，证书自动申请并续期。这篇文章讲清它适合什么场景、怎么部署、常见报错怎么排查，最后推荐两家适合做反代入口机的低价 VPS。&lt;/p>
+&lt;h2 id="反代入口机vps速览">
+ 反代入口机VPS速览
+ &lt;a class="anchor" href="#%e5%8f%8d%e4%bb%a3%e5%85%a5%e5%8f%a3%e6%9c%bavps%e9%80%9f%e8%a7%88">#&lt;/a>
+&lt;/h2>
+&lt;p>反代入口机只负责接收访问、转发请求，对 CPU 要求不高，更看重价格、端口带宽与流量。下表两家都是我们实测过的美国机器，价格为官网当前标价，可以直接点击链接前往官网：&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">商家&lt;/th>
+ &lt;th style="text-align: left">反代入口机优势&lt;/th>
+ &lt;th style="text-align: left">起步价&lt;/th>
+ &lt;th style="text-align: left">前往官网&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">RackNerd&lt;/td>
+ &lt;td style="text-align: left">年付特价，1Gbps 端口&lt;/td>
+ &lt;td style="text-align: left">$21.99/年&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://my.racknerd.com/aff.php?aff=12162" class="aff-link aff-inline" target="_blank" rel="nofollow noopener sponsored">查看 RackNerd 特价机&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">ColoCrossing&lt;/td>
+ &lt;td style="text-align: left">月付低价，每月 20TB 流量&lt;/td>
+ &lt;td style="text-align: left">$3.95/月&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloud.colocrossing.com/aff.php?aff=1064" class="aff-link aff-inline" target="_blank" rel="nofollow noopener sponsored">查看 ColoCrossing Cloud VPS&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>简单来说，长期运行、想把成本压到最低的选 RackNerd 年付；流量大、想按月付费随时调整的选 ColoCrossing。两家都是普通线路，主要面向海外访客，国内访客为主时要另选优化线路。&lt;/p>
+&lt;h2 id="先判断要不要用npm">
+ 先判断要不要用NPM
+ &lt;a class="anchor" href="#%e5%85%88%e5%88%a4%e6%96%ad%e8%a6%81%e4%b8%8d%e8%a6%81%e7%94%a8npm">#&lt;/a>
+&lt;/h2>
+&lt;p>NPM 并不是所有人都需要。只放一个网站、配置很少改动的话，手写 Nginx 配置加上 certbot 自动续期就够了。下面几种情况，换成 NPM 会明显省事：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>站点较多&lt;/strong>：同一台机器要放三个以上的域名；&lt;/li>
+&lt;li>&lt;strong>容器较多&lt;/strong>：多个 Docker 服务各占一个端口；&lt;/li>
+&lt;li>&lt;strong>证书常出错&lt;/strong>：续期失败或忘记续期导致网站打不开。&lt;/li>
+&lt;/ul>
+&lt;p>NPM 本身也是一个 Docker 容器，会占用服务器的 80 与 443 端口。如果服务器上已经装了 Nginx、宝塔或其他面板，需要先停掉原来的 Web 服务，或者把 NPM 部署到一台单独的入口机上，再把请求转发给后端服务器。&lt;/p></description></item><item><title>游戏服务器VPS推荐：我的世界、幻兽帕鲁与泰拉瑞亚联机服需要多大配置（2026）</title><link>https://vpsfinder.github.io/category/vps-usecases/game-server-hosting/</link><pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate><guid>https://vpsfinder.github.io/category/vps-usecases/game-server-hosting/</guid><description>&lt;h1 id="游戏服务器vps推荐我的世界幻兽帕鲁与泰拉瑞亚联机服需要多大配置">
  游戏服务器VPS推荐：我的世界、幻兽帕鲁与泰拉瑞亚联机服需要多大配置
  &lt;a class="anchor" href="#%e6%b8%b8%e6%88%8f%e6%9c%8d%e5%8a%a1%e5%99%a8vps%e6%8e%a8%e8%8d%90%e6%88%91%e7%9a%84%e4%b8%96%e7%95%8c%e5%b9%bb%e5%85%bd%e5%b8%95%e9%b2%81%e4%b8%8e%e6%b3%b0%e6%8b%89%e7%91%9e%e4%ba%9a%e8%81%94%e6%9c%ba%e6%9c%8d%e9%9c%80%e8%a6%81%e5%a4%9a%e5%a4%a7%e9%85%8d%e7%bd%ae">#&lt;/a>
 &lt;/h1>
@@ -1237,4 +1389,47 @@
  &lt;/div>
 &lt;/div>
 &lt;p>如果你还不了解这家商家的机房背景、流量政策和退款条款，可以先阅读 
- &lt;a href="https://vpsfinder.github.io/category/vps-providers/colocrossing/">ColoCrossing 商家介绍&lt;/a>。本文不再重复这些信息，只聚焦这台水牛城机器本身的实测表现。&lt;/p></description></item></channel></rss>
+ &lt;a href="https://vpsfinder.github.io/category/vps-providers/colocrossing/">ColoCrossing 商家介绍&lt;/a>。本文不再重复这些信息，只聚焦这台水牛城机器本身的实测表现。&lt;/p></description></item><item><title>HostDare 洛杉矶 CN2 测评：三网平均 168ms、电信 CN2 加联通 9929 回程与 NVMe 跑分实测</title><link>https://vpsfinder.github.io/category/vps-reviews/hostdare-los-angeles-cn2/</link><pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate><guid>https://vpsfinder.github.io/category/vps-reviews/hostdare-los-angeles-cn2/</guid><description>&lt;h1 id="hostdare-洛杉矶-cn2-测评三网平均-168ms电信-cn2-加联通-9929-回程与-nvme-跑分实测">
+ HostDare 洛杉矶 CN2 测评：三网平均 168ms、电信 CN2 加联通 9929 回程与 NVMe 跑分实测
+ &lt;a class="anchor" href="#hostdare-%e6%b4%9b%e6%9d%89%e7%9f%b6-cn2-%e6%b5%8b%e8%af%84%e4%b8%89%e7%bd%91%e5%b9%b3%e5%9d%87-168ms%e7%94%b5%e4%bf%a1-cn2-%e5%8a%a0%e8%81%94%e9%80%9a-9929-%e5%9b%9e%e7%a8%8b%e4%b8%8e-nvme-%e8%b7%91%e5%88%86%e5%ae%9e%e6%b5%8b">#&lt;/a>
+&lt;/h1>
+&lt;p>HostDare 的 CSSD 系列一直被当作搬瓦工 CN2 GIA 的平价替代，官网标注电信 CN2 GIA、联通 9929 与移动 CMIN2 三网回程优化。价格只有高端专线的一半左右，线路到底能做到几成，是很多人下单前最关心的问题。&lt;/p>
+&lt;p>这次我们测试的是一台长期运行的 HostDare 洛杉矶 CN2-GIA 入门实例，重点看三网延迟、持续丢包与回程路由，同时覆盖硬件、带宽和 IP 属性，下面把原始数据和解读逐项摊开。&lt;/p>
+&lt;div class="vps-provider-card" id="provider-hostdare">
+ &lt;div class="provider-card-header">
+ &lt;div class="provider-title-wrap">
+ &lt;h3 class="provider-name">HostDare&lt;/h3>&lt;span class="provider-badge">十年老牌洛杉矶优化线路&lt;/span>&lt;/div>
+ &lt;div class="provider-rating">
+ &lt;span class="rating-stars">★&lt;/span>
+ &lt;span class="rating-score">4.5&lt;/span>
+ &lt;span class="rating-max">/ 5.0&lt;/span>
+ &lt;/div>
+ &lt;/div>
+
+ &lt;div class="provider-meta-grid">
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">成立时间&lt;/span>
+ &lt;span class="meta-value">2015 年&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">起步价格&lt;/span>
+ &lt;span class="meta-value price-highlight">$25.99/年&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">运营主体&lt;/span>
+ &lt;span class="meta-value">美国加州&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">退款政策&lt;/span>
+ &lt;span class="meta-value">支持3天退款保证&lt;/span>
+ &lt;/div>
+ &lt;/div>&lt;div class="provider-features-tags">&lt;span class="feature-pill">CN2 GIA/9929/CMIN2&lt;/span>&lt;span class="feature-pill">NVMe高速固态&lt;/span>&lt;span class="feature-pill">十年稳定老牌&lt;/span>&lt;span class="feature-pill">常年大额折扣促销&lt;/span>&lt;/div>&lt;div class="provider-actions">&lt;a href="https://vpsfinder.github.io/category/vps-providers/hostdare/" class="card-btn btn-secondary">
+ &lt;span>查看商家介绍&lt;/span>
+ &lt;/a>&lt;a href="https://bill.hostdare.com/aff.php?aff=3925" class="card-btn btn-primary" target="_blank" rel="nofollow noopener sponsored">
+ &lt;span>访问官方网站&lt;/span>
+ &lt;svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14" aria-hidden="true">&lt;path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />&lt;/svg>
+ &lt;/a>
+ &lt;/div>
+&lt;/div>
+&lt;p>如果你还不了解这家商家的运营背景、CSSD 与 CKVM 产品线和优惠码，可以先阅读 
+ &lt;a href="https://vpsfinder.github.io/category/vps-providers/hostdare/">HostDare 商家介绍&lt;/a>。本文不再重复这些信息，只聚焦这台洛杉矶 CN2 机器本身的实测表现。&lt;/p></description></item></channel></rss>
