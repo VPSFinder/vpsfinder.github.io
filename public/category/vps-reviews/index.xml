@@ -700,4 +700,90 @@
  &lt;/div>
 &lt;/div>
 &lt;p>如果你还不了解这家商家的运营背景、CSSD 与 CKVM 产品线和优惠码，可以先阅读 
- &lt;a href="https://vpsfinder.github.io/category/vps-providers/hostdare/">HostDare 商家介绍&lt;/a>。本文不再重复这些信息，只聚焦这台洛杉矶 CN2 机器本身的实测表现。&lt;/p></description></item></channel></rss>
+ &lt;a href="https://vpsfinder.github.io/category/vps-providers/hostdare/">HostDare 商家介绍&lt;/a>。本文不再重复这些信息，只聚焦这台洛杉矶 CN2 机器本身的实测表现。&lt;/p></description></item><item><title>搬瓦工纽约 USNY_6 测评：EPYC-Genoa 新硬件跑分、8.7Gbps 本地带宽与美东回国延迟实测</title><link>https://vpsfinder.github.io/category/vps-reviews/bandwagonhost-new-york-usny6/</link><pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate><guid>https://vpsfinder.github.io/category/vps-reviews/bandwagonhost-new-york-usny6/</guid><description>&lt;h1 id="搬瓦工纽约-usny_6-测评epyc-genoa-新硬件跑分87gbps-本地带宽与美东回国延迟实测">
+ 搬瓦工纽约 USNY_6 测评：EPYC-Genoa 新硬件跑分、8.7Gbps 本地带宽与美东回国延迟实测
+ &lt;a class="anchor" href="#%e6%90%ac%e7%93%a6%e5%b7%a5%e7%ba%bd%e7%ba%a6-usny_6-%e6%b5%8b%e8%af%84epyc-genoa-%e6%96%b0%e7%a1%ac%e4%bb%b6%e8%b7%91%e5%88%8687gbps-%e6%9c%ac%e5%9c%b0%e5%b8%a6%e5%ae%bd%e4%b8%8e%e7%be%8e%e4%b8%9c%e5%9b%9e%e5%9b%bd%e5%bb%b6%e8%bf%9f%e5%ae%9e%e6%b5%8b">#&lt;/a>
+&lt;/h1>
+&lt;p>提到搬瓦工，大多数人想到的是洛杉矶 DC6、DC9 的 CN2 GIA-E 线路。其实它的 Basic VPS 也能开在纽约 USNY_6 机房，这里换上了 AMD EPYC-Genoa 新硬件，面向的是欧美访客和外贸业务，而不是国内回程。&lt;/p>
+&lt;p>这次我们在 USNY_6 开通了一台 Basic VPS 2核1G 实例，从延迟、丢包、路由、硬件、带宽和 IP 属性六个维度做了完整测试。美东机房离国内远，下面会把国内访问与欧美访问的表现分开来看。&lt;/p>
+&lt;div class="vps-provider-card" id="provider-bandwagonhost">
+ &lt;div class="provider-card-header">
+ &lt;div class="provider-title-wrap">
+ &lt;h3 class="provider-name">搬瓦工 (BandwagonHost)&lt;/h3>&lt;span class="provider-badge">中美高端国际线路行业标杆&lt;/span>&lt;/div>
+ &lt;div class="provider-rating">
+ &lt;span class="rating-stars">★&lt;/span>
+ &lt;span class="rating-score">4.9&lt;/span>
+ &lt;span class="rating-max">/ 5.0&lt;/span>
+ &lt;/div>
+ &lt;/div>
+
+ &lt;div class="provider-meta-grid">
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">成立时间&lt;/span>
+ &lt;span class="meta-value">2004 年&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">起步价格&lt;/span>
+ &lt;span class="meta-value price-highlight">$52.99/半年&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">运营主体&lt;/span>
+ &lt;span class="meta-value">加拿大 / IT7 Networks&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">退款政策&lt;/span>
+ &lt;span class="meta-value">支持30天全额退款政策&lt;/span>
+ &lt;/div>
+ &lt;/div>&lt;div class="provider-features-tags">&lt;span class="feature-pill">后台一键自由迁移机房&lt;/span>&lt;span class="feature-pill">顶级CN2 GIA-E网络&lt;/span>&lt;span class="feature-pill">日本软银/香港高端节点&lt;/span>&lt;span class="feature-pill">99.9%企业级在线率&lt;/span>&lt;/div>&lt;div class="provider-actions">&lt;a href="https://vpsfinder.github.io/category/vps-providers/bandwagonhost/" class="card-btn btn-secondary">
+ &lt;span>查看商家介绍&lt;/span>
+ &lt;/a>&lt;a href="https://bwh81.net/aff.php?aff=75629" class="card-btn btn-primary" target="_blank" rel="nofollow noopener sponsored">
+ &lt;span>访问官方网站&lt;/span>
+ &lt;svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14" aria-hidden="true">&lt;path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />&lt;/svg>
+ &lt;/a>
+ &lt;/div>
+&lt;/div>
+&lt;p>如果你还不了解搬瓦工的品牌背景、KiwiVM 面板和全部在售系列，可以先阅读 
+ &lt;a href="https://vpsfinder.github.io/category/vps-providers/bandwagonhost/">搬瓦工商家介绍&lt;/a>。本文不再重复这些信息，只聚焦这台纽约机器本身的实测表现。&lt;/p></description></item><item><title>DMIT 洛杉矶 Premium 测评：三网 CN2 GIA 回程、全国平均 164ms、持续 Ping 0 丢包与 EPYC 9654 跑分实测</title><link>https://vpsfinder.github.io/category/vps-reviews/dmit-los-angeles-premium-cn2/</link><pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate><guid>https://vpsfinder.github.io/category/vps-reviews/dmit-los-angeles-premium-cn2/</guid><description>&lt;h1 id="dmit-洛杉矶-premium-测评三网-cn2-gia-回程全国平均-164ms持续-ping-0-丢包与-epyc-9654-跑分实测">
+ DMIT 洛杉矶 Premium 测评：三网 CN2 GIA 回程、全国平均 164ms、持续 Ping 0 丢包与 EPYC 9654 跑分实测
+ &lt;a class="anchor" href="#dmit-%e6%b4%9b%e6%9d%89%e7%9f%b6-premium-%e6%b5%8b%e8%af%84%e4%b8%89%e7%bd%91-cn2-gia-%e5%9b%9e%e7%a8%8b%e5%85%a8%e5%9b%bd%e5%b9%b3%e5%9d%87-164ms%e6%8c%81%e7%bb%ad-ping-0-%e4%b8%a2%e5%8c%85%e4%b8%8e-epyc-9654-%e8%b7%91%e5%88%86%e5%ae%9e%e6%b5%8b">#&lt;/a>
+&lt;/h1>
+&lt;p>DMIT 的洛杉矶 Premium 线路（官网现在标注为 Pro）是美西 CN2 GIA 里的高端选择，价格比普通线路贵出好几倍。大家最想知道的是，这个价格换来的晚间稳定性到底有多好，硬件和解锁又配不配得上这个价位。&lt;/p>
+&lt;p>这次我们开通了一台 DMIT 洛杉矶 Premium 1核2G 实例，从延迟、丢包、路由、硬件、带宽和 IP 属性六个维度做了完整测试。延迟与丢包两项使用 DMIT 官方 Looking Glass 公布的洛杉矶 Pro 测试 IP 测得，其余数据均来自测试机本身。&lt;/p>
+&lt;div class="vps-provider-card" id="provider-dmit">
+ &lt;div class="provider-card-header">
+ &lt;div class="provider-title-wrap">
+ &lt;h3 class="provider-name">DMIT&lt;/h3>&lt;span class="provider-badge">中美高端 CN2 GIA/9929 直连天花板&lt;/span>&lt;/div>
+ &lt;div class="provider-rating">
+ &lt;span class="rating-stars">★&lt;/span>
+ &lt;span class="rating-score">4.9&lt;/span>
+ &lt;span class="rating-max">/ 5.0&lt;/span>
+ &lt;/div>
+ &lt;/div>
+
+ &lt;div class="provider-meta-grid">
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">成立时间&lt;/span>
+ &lt;span class="meta-value">2018 年&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">起步价格&lt;/span>
+ &lt;span class="meta-value price-highlight">$10.90/月&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">运营主体&lt;/span>
+ &lt;span class="meta-value">美国 (美籍华人极客团队)&lt;/span>
+ &lt;/div>
+ &lt;div class="meta-item">
+ &lt;span class="meta-label">退款政策&lt;/span>
+ &lt;span class="meta-value">3天全额退款 / 30天按比例退款&lt;/span>
+ &lt;/div>
+ &lt;/div>&lt;div class="provider-features-tags">&lt;span class="feature-pill">三网CN2 GIA/9929/CMIN2&lt;/span>&lt;span class="feature-pill">超量不停机（限速保活）&lt;/span>&lt;span class="feature-pill">定期免费更换原生IP&lt;/span>&lt;span class="feature-pill">3天全额/30天按比例退款&lt;/span>&lt;/div>&lt;div class="provider-actions">&lt;a href="https://vpsfinder.github.io/category/vps-providers/dmit/" class="card-btn btn-secondary">
+ &lt;span>查看商家介绍&lt;/span>
+ &lt;/a>&lt;a href="https://www.dmit.io/aff.php?aff=10272" class="card-btn btn-primary" target="_blank" rel="nofollow noopener sponsored">
+ &lt;span>访问官方网站&lt;/span>
+ &lt;svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14" aria-hidden="true">&lt;path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />&lt;/svg>
+ &lt;/a>
+ &lt;/div>
+&lt;/div>
+&lt;p>如果你还不了解 DMIT 的品牌背景、三条线路的区别和全部在售套餐，可以先阅读 
+ &lt;a href="https://vpsfinder.github.io/category/vps-providers/dmit/">DMIT 商家介绍&lt;/a>。本文不再重复这些信息，只聚焦这台洛杉矶 Premium 机器本身的实测表现。&lt;/p></description></item></channel></rss>

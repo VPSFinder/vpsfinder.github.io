@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>便宜VPS推荐 · 按年预算挑选：$25 以内与 $25~$50 两档怎么选 on 寻机匠</title><link>https://vpsfinder.github.io/category/vps-price/</link><description>Recent content in 便宜VPS推荐 · 按年预算挑选：$25 以内与 $25~$50 两档怎么选 on 寻机匠</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Sat, 07 Nov 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://vpsfinder.github.io/category/vps-price/index.xml" rel="self" type="application/rss+xml"/><item><title>年付25美元以内VPS推荐：99元香港特惠、6美元半年付与21.99美元年付怎么选（2026）</title><link>https://vpsfinder.github.io/category/vps-price/vps-under-25/</link><pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate><guid>https://vpsfinder.github.io/category/vps-price/vps-under-25/</guid><description>&lt;h1 id="年付25美元以内vps推荐99元香港特惠6美元半年付与2199美元年付">
+ 年付25美元以内VPS推荐：99元香港特惠、6美元半年付与21.99美元年付
+ &lt;a class="anchor" href="#%e5%b9%b4%e4%bb%9825%e7%be%8e%e5%85%83%e4%bb%a5%e5%86%85vps%e6%8e%a8%e8%8d%9099%e5%85%83%e9%a6%99%e6%b8%af%e7%89%b9%e6%83%a06%e7%be%8e%e5%85%83%e5%8d%8a%e5%b9%b4%e4%bb%98%e4%b8%8e2199%e7%be%8e%e5%85%83%e5%b9%b4%e4%bb%98">#&lt;/a>
+&lt;/h1>
+&lt;p>年付十几美元的 VPS 曾经很常见，现在常驻在售的机型大多涨到了 20 美元以上。还能用十几美元拿下一整年的，基本只剩香港特惠年付和 512MB 内存的限量小机，而且往往需要接受库存少、配置小的条件。&lt;/p>
+&lt;p>这篇文章整理了三家年付 25 美元以内的机型：野草云香港特惠年付 99 元，ByteVirt 美国与香港 Lite 折合一年 12 美元，RackNerd 常驻特价年付 21.99 美元。预算能再加一点的话，可以直接看 
+ &lt;a href="https://vpsfinder.github.io/category/vps-price/vps-25-to-50/">年付25到50美元VPS推荐&lt;/a>。&lt;/p>
+&lt;h2 id="年付25美元以内速览">
+ 年付25美元以内速览
+ &lt;a class="anchor" href="#%e5%b9%b4%e4%bb%9825%e7%be%8e%e5%85%83%e4%bb%a5%e5%86%85%e9%80%9f%e8%a7%88">#&lt;/a>
+&lt;/h2>
+&lt;p>下表按一年的实际花费整理，价格为官网当前标价，人民币价格按约 7.1 的汇率折算。看完已经有倾向的话，可以直接点击表格中的链接前往官网，下文再逐家展开配置、线路与适用场景：&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">商家&lt;/th>
+ &lt;th style="text-align: left">便宜在哪&lt;/th>
+ &lt;th style="text-align: left">一年花费&lt;/th>
+ &lt;th style="text-align: left">前往官网&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">野草云&lt;/td>
+ &lt;td style="text-align: left">香港免备案，带宽 200Mbps&lt;/td>
+ &lt;td style="text-align: left">¥99（约 $14）&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://my.yecaoyun.com/aff.php?aff=4939" class="aff-link aff-inline" target="_blank" rel="nofollow noopener sponsored">查看野草云香港特惠年付&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">ByteVirt&lt;/td>
+ &lt;td style="text-align: left">价格最低，月流量 1.5TB&lt;/td>
+ &lt;td style="text-align: left">$12&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://bytevirt.com/aff.php?aff=986" class="aff-link aff-inline" target="_blank" rel="nofollow noopener sponsored">查看 ByteVirt Lite 系列&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">RackNerd&lt;/td>
+ &lt;td style="text-align: left">1GB 内存，常驻在售&lt;/td>
+ &lt;td style="text-align: left">$21.99&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://my.racknerd.com/aff.php?aff=12162" class="aff-link aff-inline" target="_blank" rel="nofollow noopener sponsored">查看 RackNerd 特价年付&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>简单来说，访客在国内、想要打开速度选野草云，只想用最少的钱拿一台机器选 ByteVirt，需要 1GB 内存跑 WordPress、又希望随时能买到的选 RackNerd。&lt;/p>
+&lt;h2 id="这个价位要让步什么">
+ 这个价位要让步什么
+ &lt;a class="anchor" href="#%e8%bf%99%e4%b8%aa%e4%bb%b7%e4%bd%8d%e8%a6%81%e8%ae%a9%e6%ad%a5%e4%bb%80%e4%b9%88">#&lt;/a>
+&lt;/h2>
+&lt;p>一年二十几美元以内，商家能给的资源有限，价格压下来之后，总有一些地方需要让步。下单前先确认下面三点自己能不能接受，往往比单纯比较谁更便宜更重要：&lt;/p></description></item><item><title>年付25到50美元VPS推荐：2核1G年付、月付高主频、8GB大内存与20TB流量怎么选（2026）</title><link>https://vpsfinder.github.io/category/vps-price/vps-25-to-50/</link><pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate><guid>https://vpsfinder.github.io/category/vps-price/vps-25-to-50/</guid><description>&lt;h1 id="年付25到50美元vps推荐2核1g年付月付高主频8gb大内存与20tb流量">
+ 年付25到50美元VPS推荐：2核1G年付、月付高主频、8GB大内存与20TB流量
+ &lt;a class="anchor" href="#%e5%b9%b4%e4%bb%9825%e5%88%b050%e7%be%8e%e5%85%83vps%e6%8e%a8%e8%8d%902%e6%a0%b81g%e5%b9%b4%e4%bb%98%e6%9c%88%e4%bb%98%e9%ab%98%e4%b8%bb%e9%a2%918gb%e5%a4%a7%e5%86%85%e5%ad%98%e4%b8%8e20tb%e6%b5%81%e9%87%8f">#&lt;/a>
+&lt;/h1>
+&lt;p>一年预算从 25 美元提高到 50 美元，多出来的二十几美元换来的不只是更大的内存。这个价位开始能买到月付机型、更快的处理器和每月十几 TB 的流量，选择面也比特价机宽得多，不必再盯着限量库存。&lt;/p>
+&lt;p>这篇文章整理了四家一年花费 25~50 美元的机型，CloudCone 与 GreenCloud 是年付，Evoxt 与 ColoCrossing 是月付，按一年 12 个月折算。如果你只想花最少的钱，可以先看 
+ &lt;a href="https://vpsfinder.github.io/category/vps-price/vps-under-25/">年付25美元以内VPS推荐&lt;/a>。&lt;/p>
+&lt;h2 id="年付25到50美元速览">
+ 年付25到50美元速览
+ &lt;a class="anchor" href="#%e5%b9%b4%e4%bb%9825%e5%88%b050%e7%be%8e%e5%85%83%e9%80%9f%e8%a7%88">#&lt;/a>
+&lt;/h2>
+&lt;p>下表按一年的实际花费整理，月付机型按 12 个月折算，价格为官网当前标价。看完已经有倾向的话，可以直接点击表格中的链接前往官网，下文再逐家展开配置、实测数据与适用场景：&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">商家&lt;/th>
+ &lt;th style="text-align: left">这一档的优势&lt;/th>
+ &lt;th style="text-align: left">一年花费&lt;/th>
+ &lt;th style="text-align: left">前往官网&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">CloudCone&lt;/td>
+ &lt;td style="text-align: left">年付 2核1G，4TB 流量&lt;/td>
+ &lt;td style="text-align: left">$28 起&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://app.cloudcone.com/?ref=11765" class="aff-link aff-inline" target="_blank" rel="nofollow noopener sponsored">查看 CloudCone SSD VPS&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Evoxt&lt;/td>
+ &lt;td style="text-align: left">月付高主频，自带备份&lt;/td>
+ &lt;td style="text-align: left">约 $36&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://console.evoxt.com/aff.php?aff=1780" class="aff-link aff-inline" target="_blank" rel="nofollow noopener sponsored">查看 Evoxt 月付 VPS&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">GreenCloud&lt;/td>
+ &lt;td style="text-align: left">年付 4核8G 大内存&lt;/td>
+ &lt;td style="text-align: left">$45&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://greencloudvps.com/billing/aff.php?aff=8209" class="aff-link aff-inline" target="_blank" rel="nofollow noopener sponsored">查看 GreenCloud 特价年付&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">ColoCrossing&lt;/td>
+ &lt;td style="text-align: left">每月 20TB 大流量&lt;/td>
+ &lt;td style="text-align: left">约 $47&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloud.colocrossing.com/aff.php?aff=1064" class="aff-link aff-inline" target="_blank" rel="nofollow noopener sponsored">查看 ColoCrossing Cloud VPS&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>简单来说，想一次付清选 CloudCone，想按月付、在意处理器性能选 Evoxt，要跑多个站点或 Docker 选 GreenCloud，下载、备份这类大流量业务选 ColoCrossing。&lt;/p></description></item></channel></rss>
